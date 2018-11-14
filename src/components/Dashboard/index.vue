@@ -1,21 +1,15 @@
+<!-- 首页 -->
 <template>
   <div class='hello'>
-    <h1>{{ msg }}</h1>
+    <h1>{{msg}}</h1>
+    <img src="@/assets/logo.png">
     <h2>The first try form Cheky with Vrma</h2>
     <ul>
-      <li>
-        <a href='https://vuejs.org' target='_blank'>
-          VueElTable
-        </a>
-      </li>
+      <router-link to="/table" tag="VueElTable">VueElTable</router-link>
+      <router-link to="/tab" tag="li">VueElTab</router-link>
       <li>
         <a href='https://forum.vuejs.org' target='_blank'>
           VueElForm
-        </a>
-      </li>
-      <li>
-        <a href='https://chat.vuejs.org' target='_blank'>
-          VueElTab
         </a>
       </li>
       <li>
@@ -55,7 +49,6 @@ export default {
 };
 </script>
 
-<!-- Add 'scoped' attribute to limit CSS to this component only -->
 <style scoped>
 h1,
 h2 {

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <!-- 根据路由地址渲染匹配的组件 -->
     <router-view />
   </div>

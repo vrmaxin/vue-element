@@ -1,17 +1,29 @@
+<!-- 数据栏 -->
 <template>
-    <el-table :data="tableData" style="width: 100%">
-        <el-table-column prop="date" label="日期" width="180">
-        </el-table-column>
-        <el-table-column prop="name" label="姓名" width="180">
-        </el-table-column>
-        <el-table-column prop="address" label="地址">
-        </el-table-column>
-    </el-table>
-</template>
+  <div class="app-container">
+    <!--筛选栏-->
+    <div class="filter-container">
 
+    </div>
+    <!--工具栏-->
+    <div class="operate-container">
+
+    </div>
+    <!-- 数据栏 -->
+    <div class="data-container">
+
+    </div>
+    <!-- 分页栏 -->
+    <vue-el-pagination></vue-el-pagination>
+  </div>
+</template>
 <script>
+import VueElPagination from "./lib/VueElPagination";
 export default {
   name: "VueElTable",
+  components: {
+    VueElPagination
+  },
   data() {
     return {
       tableData: [
@@ -42,6 +54,5 @@ export default {
 </script>
 
 <style>
-
 </style>
 
